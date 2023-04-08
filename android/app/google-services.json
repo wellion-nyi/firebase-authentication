@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "346138558613",
+    "project_id": "siginsigup-cloubfirebase",
+    "storage_bucket": "siginsigup-cloubfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346138558613:android:d8e259682bb5c0b7e45b9c",
+        "android_client_info": {
+          "package_name": "com.example.siginsigup_cloubfirbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346138558613-3pn0rvj41hlauqijaajt3egpfo82903n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.siginsigup_cloubfirbase",
+            "certificate_hash": "4894cfdcabcdf4ffe56a7edab1523385b7645d74"
+          }
+        },
+        {
+          "client_id": "346138558613-qqusijr6at5rhngh2gtn49reqejeiami.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX9HUxOoxAmX3HS1C_xlixB_BRlADJ4ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "346138558613-qqusijr6at5rhngh2gtn49reqejeiami.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

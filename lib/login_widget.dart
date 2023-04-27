@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:siginsigup_cloubfirbase/forgot_password_page.dart';
 import 'package:siginsigup_cloubfirbase/main.dart';
 import 'package:siginsigup_cloubfirbase/utils/utils.dart';
 
@@ -72,9 +73,23 @@ class _LoginWidgetState extends State<LoginWidget> {
               const SizedBox(
                 height: 24,
               ),
+              GestureDetector(
+                child: Text(
+                  'Forget Password?',
+                  style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: Theme.of(context).colorScheme.background,
+                      fontSize: 20),
+                ),
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const ForgotPasswordPage())),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
               RichText(
                   text: TextSpan(
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.black38,
                         fontSize: 23,
                       ),
@@ -112,8 +127,7 @@ class _LoginWidgetState extends State<LoginWidget> {
 
       Utils.showSnackBar(e.message);
     }
-
+    navigatorKey.currentState!.pop((route) => route.isFirst);
     //Navigator.of(context) not working!
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
   }
 }

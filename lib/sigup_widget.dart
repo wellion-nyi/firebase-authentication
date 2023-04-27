@@ -132,7 +132,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
     }
 
     //Navigator.of(context) not working!
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
+    navigatorKey.currentState!.pop((route) => route.isFirst);
   }
 
   String? validateEmail(String? value) {
